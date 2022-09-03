@@ -12,7 +12,7 @@ juego = Game()
 async def bienvenido:
     return [
         {
-            "Introduce 'search/EL JUEGO QUE QUIERAS BUSCAR'"
+            "Bienvenido": "Introduce 'search/EL JUEGO QUE QUIERAS BUSCAR'"
         }
     ]
 
