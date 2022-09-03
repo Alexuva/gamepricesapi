@@ -16,7 +16,7 @@ class Search():
             anchor = resultado.find("h2.media-heading.truncate > a")
             for title in anchor:
                 enlace = str(title.absolute_links).split("es/")
-                nuevo_enlace = "http://127.0.0.1:8000/"+ enlace[1]
+                nuevo_enlace = "https://game-price.herokuapp.com/"+ enlace[1]
                 nuevo_nuevo_enlace = nuevo_enlace.replace("'}", "")
                 game = {
                     "Titulo": f"{title.text}",
