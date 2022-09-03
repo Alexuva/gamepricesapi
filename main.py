@@ -8,6 +8,15 @@ look = Search()
 
 juego = Game()
 
+@app.get("/")
+async def bienvenido:
+    return [
+        {
+            "Introduce 'search/EL JUEGO QUE QUIERAS BUSCAR'"
+        }
+    ]
+
+
 @app.get("/search/{title}")
 async def read_item(title):
     try:
