@@ -40,7 +40,3 @@ class Game():
                 shop_list.append(juego)
 
         return shop_list
-
-juego = Game()
-
-juego.titledata("comprar-victoria-3-pc-cd-key")
