@@ -26,17 +26,13 @@ class Game():
                     if "https://gocdkeys.com/es/ir/" in enlace:
                         enlace_compra = enlace
 
-                juego = {
-                    "Tiendas": [
-                        {
-                            "Nombre": f"{nombre_local}",
-                            "Region": f"{region}",
-                            "Precio": f"{precio}",
-                            "Enlace": f"{enlace_compra}"
-                        }
-                    ]
+                tienda = {
+                        "Nombre": f"{nombre_local}",
+                        "Region": f"{region}",
+                        "Precio": f"{precio}",
+                        "Enlace": f"{enlace_compra}"
                 }
 
-                shop_list.append(juego)
+                shop_list.append(tienda)
 
         return shop_list
