@@ -12,11 +12,11 @@ juego = Game()
 async def bienvenido():
     return [
         {
-            "Bienvenido": "Introduce '/search/EL JUEGO QUE QUIERAS BUSCAR' en la barra del buscador"
+            "Bienvenido": "Introduce '/?search=EL JUEGO QUE QUIERAS BUSCAR' en la barra del buscador"
         }
     ]
 
-@app.get("/search={title}")
+@app.get("/?search={title}")
 async def read_item(title):
     try:
         return look.searchdata(title)
