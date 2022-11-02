@@ -8,6 +8,7 @@ look = Search()
 
 juego = Game()
 
+
 @app.get("/")
 async def bienvenido():
     return [
@@ -15,6 +16,7 @@ async def bienvenido():
             "Bienvenido": "Introduce '/?search=EL JUEGO QUE QUIERAS BUSCAR' en la barra del buscador"
         }
     ]
+
 
 @app.get("/?search={title}")
 async def read_item(title):
@@ -35,6 +37,6 @@ async def read_item(url):
     except:
         return [
             {
-                "Error" : "No se han encontrado tiendas"
+                "Error": "No se han encontrado tiendas"
             }
         ]
