@@ -18,7 +18,7 @@ async def bienvenido():
     ]
 
 
-@app.get("/?search={title}")
+@app.get("/search={title}")
 async def read_item(title):
     try:
         return look.searchdata(title)
